@@ -1,7 +1,6 @@
 package db
 
 import (
-	"strings"
 	"time"
 
 	"gopkg.in/mgo.v2"
@@ -12,16 +11,16 @@ var (
 )
 
 type mongoStorage struct {
-	Servers   []string
+	Servers   string
 	Db        string
 	dbSession *mgo.Session
 }
 
-func newMongoStorage(servers []string, db string) (*mongoStorage, error) {
+func newMongoStorage(servers string, db string) (*mongoStorage, error) {
 	storage := &mongoStorage{}
 	storage.Servers = servers
 	storage.Db = db
-	session, err := mgo.Dial(strings.Join(servers, ","))
+	session, err := mgo.Dial(servers)
 	if err == nil {
 		storage.dbSession = session
 		go autoReconnect(session)
@@ -29,7 +28,7 @@ func newMongoStorage(servers []string, db string) (*mongoStorage, error) {
 	return storage, err
 }
 
-func InitMongoDB(servers []string, db string) error {
+func InitMongoDB(servers string, db string) error {
 	var err error
 	_mongoStorage, err = newMongoStorage(servers, db)
 	return err

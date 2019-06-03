@@ -5,7 +5,7 @@ import (
 	"regexp"
 	//"path"
 
-	"aproxy/lib/util"
+	"github.com/0987363/aproxy/lib/util"
 )
 
 var (

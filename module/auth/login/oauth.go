@@ -1,11 +1,11 @@
 package login
 
 import (
-	"aproxy/lib/rfweb"
-	"aproxy/lib/util"
-	"aproxy/module/auth"
-	"aproxy/module/constant"
-	"aproxy/module/oauth"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/lib/util"
+	"github.com/0987363/aproxy/module/auth"
+	"github.com/0987363/aproxy/module/constant"
+	"github.com/0987363/aproxy/module/oauth"
 	"io"
 	"net/http"
 )

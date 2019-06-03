@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"aproxy/conf"
-	"aproxy/module/auth"
-	"aproxy/module/db"
+	"github.com/0987363/aproxy/conf"
+	"github.com/0987363/aproxy/module/auth"
+	"github.com/0987363/aproxy/module/db"
 )
 
 var (

@@ -3,10 +3,10 @@ package setting
 import (
 	"net/http"
 
-	"aproxy/lib/rfweb"
-	"aproxy/lib/util"
-	"aproxy/module/auth"
-	"aproxy/module/auth/login"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/lib/util"
+	"github.com/0987363/aproxy/module/auth"
+	"github.com/0987363/aproxy/module/auth/login"
 )
 
 var (

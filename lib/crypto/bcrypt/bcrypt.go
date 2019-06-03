@@ -8,7 +8,7 @@ package bcrypt
 
 // The code is a port of Provos and Mazières's C implementation.
 import (
-	"aproxy/lib/crypto/blowfish"
+	"github.com/0987363/aproxy/lib/crypto/blowfish"
 	"crypto/rand"
 	"crypto/subtle"
 	"errors"

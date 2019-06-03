@@ -7,16 +7,16 @@ import (
 	"os"
 	"path/filepath"
 
-	"aproxy/conf"
-	"aproxy/lib/rfweb/session"
-	"aproxy/loginservices/github"
-	"aproxy/module/auth"
-	"aproxy/module/auth/login"
-	bkconf "aproxy/module/backend_conf"
-	"aproxy/module/db"
-	"aproxy/module/oauth"
-	"aproxy/module/proxy"
-	"aproxy/module/setting"
+	"github.com/0987363/aproxy/conf"
+	"github.com/0987363/aproxy/lib/rfweb/session"
+	"github.com/0987363/aproxy/loginservices/github"
+	"github.com/0987363/aproxy/module/auth"
+	"github.com/0987363/aproxy/module/auth/login"
+	bkconf "github.com/0987363/aproxy/module/backend_conf"
+	"github.com/0987363/aproxy/module/db"
+	"github.com/0987363/aproxy/module/oauth"
+	"github.com/0987363/aproxy/module/proxy"
+	"github.com/0987363/aproxy/module/setting"
 )
 
 var (
@@ -43,7 +43,7 @@ func main() {
 	mgoConf := config.Db.Mongo
 	err = db.InitMongoDB(mgoConf.Servers, mgoConf.Db)
 	if err != nil {
-		log.Fatalln("Can not set to MongoDB backend config storage.", mgoConf.Servers)
+		log.Fatalln("Can not set to MongoDB backend config storage.", mgoConf.Servers, err)
 	}
 	// Set backend-config storage to MongoDB
 	bkconf.SetBackendConfStorageToMongo()

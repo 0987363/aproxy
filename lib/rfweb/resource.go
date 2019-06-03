@@ -3,7 +3,7 @@ package rfweb
 import (
 	"net/http"
 
-	"aproxy/lib/rfweb/session"
+	"github.com/0987363/aproxy/lib/rfweb/session"
 )
 
 type Context struct {

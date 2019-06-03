@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"aproxy/lib/rfweb"
-	"aproxy/lib/util"
-	bkconf "aproxy/module/backend_conf"
-	"aproxy/module/proxy"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/lib/util"
+	bkconf "github.com/0987363/aproxy/module/backend_conf"
+	"github.com/0987363/aproxy/module/proxy"
 )
 
 type BackendConfResource struct {

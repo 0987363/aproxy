@@ -9,11 +9,11 @@ import (
 	"github.com/mailgun/oxy/roundrobin"
 	"github.com/mailgun/oxy/testutils"
 
-	"aproxy/lib/rfweb"
-	"aproxy/module/auth"
-	"aproxy/module/auth/login"
-	bkconf "aproxy/module/backend_conf"
-	"aproxy/module/constant"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/module/auth"
+	"github.com/0987363/aproxy/module/auth/login"
+	bkconf "github.com/0987363/aproxy/module/backend_conf"
+	"github.com/0987363/aproxy/module/constant"
 )
 
 func Proxy(w http.ResponseWriter, r *http.Request) {

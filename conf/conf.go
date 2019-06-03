@@ -23,7 +23,7 @@ type AproxyConfig struct {
 	}
 	Db struct {
 		Mongo struct {
-			Servers []string
+			Servers string
 			Db      string
 		}
 	}

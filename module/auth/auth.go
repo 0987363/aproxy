@@ -3,8 +3,8 @@ package auth
 import (
 	"log"
 
-	"aproxy/lib/rfweb"
-	"aproxy/module/constant"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/module/constant"
 )
 
 // check permission, return error code:

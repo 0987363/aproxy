@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"regexp"
 
-	"aproxy/lib/crypto/bcrypt"
+	"github.com/0987363/aproxy/lib/crypto/bcrypt"
 )
 
 func DecodeJsonBody(r io.ReadCloser, to interface{}) error {

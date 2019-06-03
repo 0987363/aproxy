@@ -3,7 +3,7 @@ package proxy
 import (
 	"sync"
 
-	bkconf "aproxy/module/backend_conf"
+	bkconf "github.com/0987363/aproxy/module/backend_conf"
 	"github.com/mailgun/oxy/forward"
 	"github.com/mailgun/oxy/roundrobin"
 )

@@ -1,7 +1,7 @@
 package login
 
 import (
-	"aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/lib/rfweb"
 )
 
 type LogoutResource struct {

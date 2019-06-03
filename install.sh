@@ -25,16 +25,10 @@ rm -rf ./dist/$outdir/*
 mkdir -p ./dist/$outdir/bin
 mkdir -p ./dist/$outdir/conf
 
-go build -o ./dist/$outdir/bin/aproxy ./bin/aproxy.go
-go build -o ./dist/$outdir/bin/adduser ./bin/adduser.go
+GOARCH=amd64 GOOS=linux go build -o ./dist/$outdir/bin/aproxy ./bin/aproxy.go
+GOARCH=amd64 GOOS=linux go build -o ./dist/$outdir/bin/adduser ./bin/adduser.go
 
 yes|cp -rf ./web ./dist/$outdir/
 yes|cp -f ./conf/aproxy.toml ./dist/$outdir/conf/aproxy.toml.example
 
-echo "install to $INSTALL_PREFIX/aproxy"
-
-mkdir -p $INSTALL_PREFIX/aproxy
-
-yes|cp -rf ./dist/$outdir/* $INSTALL_PREFIX/aproxy/
-
-echo "build and install done."
+echo "build done."

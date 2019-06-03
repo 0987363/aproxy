@@ -10,8 +10,8 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"aproxy/lib/util"
-	"aproxy/module/db"
+	"github.com/0987363/aproxy/lib/util"
+	"github.com/0987363/aproxy/module/db"
 )
 
 const (

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"aproxy/lib/rfweb"
-	"aproxy/lib/util"
-	"aproxy/module/auth"
+	"github.com/0987363/aproxy/lib/rfweb"
+	"github.com/0987363/aproxy/lib/util"
+	"github.com/0987363/aproxy/module/auth"
 )
 
 type RoleResource struct {
