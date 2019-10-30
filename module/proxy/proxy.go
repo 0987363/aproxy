@@ -25,7 +25,7 @@ func Proxy(w http.ResponseWriter, r *http.Request) {
 		} else if status == constant.PERMISSION_STATUS_NEED_LOGIN {
 			login.RedirectToLogin(w, r)
 		} else if status == constant.PERMISSION_STATUS_NO_PERMISSION {
-			http.Error(w, "no permission", http.StatusForbidden)
+			http.Error(w, "no permission, b.Conf.AuthType", http.StatusForbidden)
 		}
 
 	} else {
